@@ -159,11 +159,11 @@
 
     ```css
     .ir {
-    	width: 0;
-        height: 0;
-        overflow: hidden;
-        position: absolute;
-        left: -1000%;
+      width: 0;
+      height: 0;
+      overflow: hidden;
+      position: absolute;
+      left: -1000%;
     }
     ```
 
