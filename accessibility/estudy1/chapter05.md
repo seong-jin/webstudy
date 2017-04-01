@@ -196,7 +196,7 @@
 | 숫자, `+` , `-` , `* ` , `/` , `Enter` , `Space` | Yes  | Yes     | Yes                                | Yes   |
 | `Alt` , `Ctrl` , `Meta` , `Shift`        | No   | No      | No                                 | Yes   |
 | `Esc`                                    | Yes  | Yes     | No                                 | Yes   |
-| `Fn` , 방향키 , `Insert` , `Del` , `PgUp` , `PgDn` , `Home` , `End` , `Backspace` | No   | Yes     | No                                 | Yes   |
+| 방향키 , `Fn` , `Insert` , `Del` , `PgUp` , `PgDn` , <br> `Home` , `End` , `Backspace` | No   | Yes     | No                                 | Yes   |
 
 
 
