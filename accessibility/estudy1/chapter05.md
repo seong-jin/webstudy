@@ -191,12 +191,12 @@
 
 * 참고 : http://help.dottoro.com/ljlwfxum.php
 
-| Key                                      | IE   | Firefox | Webkit Browser<br>(Chrome, Safari) | Opera |
-| ---------------------------------------- | ---- | ------- | ---------------------------------- | ----- |
-| 숫자, `+` , `-` , `* ` , `/` , `Enter` , `Space` | Yes  | Yes     | Yes                                | Yes   |
-| `Alt` , `Ctrl` , `Meta` , `Shift`        | No   | No      | No                                 | Yes   |
-| `Esc`                                    | Yes  | Yes     | No                                 | Yes   |
-| 방향키 , `Fn` , `Insert` , `Del` , `PgUp` , `PgDn` , <br> `Home` , `End` , `Backspace` | No   | Yes     | No                                 | Yes   |
+| Key                                      |  IE  | Firefox | Webkit Browser<br>(Chrome, Safari) | Opera |
+| ---------------------------------------- | :--: | :-----: | :--------------------------------: | :---: |
+| 숫자, `+` , `-` , `* ` , `/` , `Enter` , `Space` | Yes  |   Yes   |                Yes                 |  Yes  |
+| `Alt` , `Ctrl` , `Meta` , `Shift`        |  No  |   No    |                 No                 |  Yes  |
+| `Esc`                                    | Yes  |   Yes   |                 No                 |  Yes  |
+| 방향키 , `Fn` , `Insert` , `Del` , `Backspace` , `PgUp` , `PgDn` , <br> `Home` , `End` |  No  |   Yes   |                 No                 |  Yes  |
 
 
 
