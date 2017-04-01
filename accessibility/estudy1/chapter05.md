@@ -167,7 +167,7 @@
 
 | 마우스 이벤트                      | 키보드 이벤트                                  |
 | ---------------------------- | ---------------------------------------- |
-| `mousedown`  : 버튼을 눌렀을 때     | `keydown` : 키를 눌렀을 때 <br>`keypress` : `keydown` 과 유사. alt , ctrl , shift 등 이벤트 적용이 안되는 키가 있음 |
+| `mousedown`  : 버튼을 눌렀을 때     | `keydown` : 키를 눌렀을 때 <br>`keypress` : `keydown` 과 유사 (alt / ctrl / shift 등 제외) |
 | `mouseup` : 버튼을 눌렀다 땠을 때     | `keyup` : 키를 눌렀다 땠을 때                    |
 | `mouseover` : 커서가 객체 위에 있을 때 | `focus` : 객체에 초점이 갔을 때                   |
 | `mouseout` : 커서가 객체영역을 벗어날 때 | `blur` : 객체에서 초점이 벗어날 때                  |
