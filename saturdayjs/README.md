@@ -67,8 +67,8 @@
 
 
 
-* [History](./history) : 그날그날의 안건들 시간/날짜순으로 정리
-* [Homeworks](./homeworks) : 당일 이론 or 실습 달성목표
+* [History](./history/README.md) : 그날그날의 안건들 시간/날짜순으로 정리
+* [Homeworks](./homeworks/README.md) : 당일 이론 or 실습 달성목표
 
 
 
