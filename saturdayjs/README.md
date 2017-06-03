@@ -52,11 +52,11 @@
 
 
 
-## 3. 정의
+## 3. Member
 
 
 
-### 0-1. Start
+### 3-1. Start
 
 * Time : 2017-06-03 (Saturday) PM 01:00
 * Place : [AbleSquare](http://www.ablesquare.com/main_.do) (강남역 11/12번 출구) [Naver 지도 확인](http://naver.me/5U74woTJ)
@@ -68,7 +68,7 @@
 
 
 
-### 0-2. Current Member
+### 3-2. Current Member
 
 * 김민지
 * 어성진
@@ -83,7 +83,7 @@
 
 
 
-### 0-3 Member History
+### 3-3 Member History
 
 1. Start Member
    * 김민지
