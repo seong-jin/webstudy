@@ -49,6 +49,12 @@
 
 
 
+
+<details>
+
+<summary>RWD에 대한 상세 내용을 보려면 클릭하세요</summary>
+
+
 #### ◎ 반응형 웹디자인이란
 
 * 웹 사이트가 어떤 상황에 처하든지 감각적으로 반응할 수 있게 하는 기술과 그에 따르는 아이디어를 종합하여 정의한 개념
@@ -113,29 +119,31 @@
   * speech 음성
   * all
 
-* 미디어 다입 not 은 분명하게 명시되어야 하고, all 키워드는 기본값으로 쿼리에 적용된다.
+* 미디어 타입 not 은 분명하게 명시되어야 하고, all 키워드는 기본값으로 쿼리에 적용된다.
 
 * 허용되는 미디어 특성
 
   *  width
-  * height
-  * device-width
-  * device-height
-  * orientation
-  * aspect-ratio
-  * device-aspect-ratio
-  * color
-  * color-iindex
-  * monochrome
-  * resolution
-  * scan
-  * grid
+  *  height
+  *  device-width
+  *  device-height
+  *  orientation
+  *  aspect-ratio
+  *  device-aspect-ratio
+  *  color
+  *  color-iindex
+  *  monochrome
+  *  resolution
+  *  scan
+  *  grid
 
 * 조건 연결
 
   * and
   * or
     * or 연산자 대신 컴마( `,` )를 대신 사용할 수 있다.
+
+* 명시된 조건이 참의 반대인 거짓인지를 테스트하려면 쿼리의 시작부분에 not 키워드를 사용할 수 있다.
 
 * ex
 
@@ -145,7 +153,16 @@
   }
   ```
 
+  * **해석**
+
+    > 매체가 웹 사이트를 보는 데 스크린을 사용하고 있고, 현재 화면 너비(뷰포트)가 적어도 350px 이며 기기의 방향은 세로(초상화처럼 가로보다 세로가 긴 스타일)라면 이 스타일을 적용할 것.
+    >
+    > 컴마를 사용한 것은 이 스타일이 프린트에 사용될 수 있지만 앞부분의 쿼리가 참이 되는데 반드시 필요한 조건은 아니라는 뜻이다.
+
   ​
+
+
+</details>
 
 
 
@@ -205,11 +222,11 @@
 
 
 
-## 3. Front-end  Development
+## [미완] 3. Front-end  Development
 
 
 
-이쪽은 희찬씨 정리내용으로 ...
+???
 
 
 
