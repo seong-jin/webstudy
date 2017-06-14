@@ -25,8 +25,6 @@
   * 미디어쿼리의 정의
 * Front-end Development
   * ???
-* 손코딩 2개
-  * ???
 
 
 
