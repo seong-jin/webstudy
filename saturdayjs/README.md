@@ -16,6 +16,8 @@
 
 - [History](./history/README.md) : 그날그날의 안건들 시간/날짜순으로 정리
 - [Homeworks](./homeworks/README.md) : 당일 이론 or 실습 달성목표
+- etc : 면접 내용 정리 등
+  - 별도 README.md 파일을 만들지 않는다.
 
 
 
