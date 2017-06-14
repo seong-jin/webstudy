@@ -48,6 +48,8 @@
 
 
 
+<br>
+
 <details>
 
 <summary>RWD에 대한 상세 내용을 보려면 클릭하세요</summary>
