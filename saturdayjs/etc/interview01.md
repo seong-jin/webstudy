@@ -52,7 +52,7 @@
 
 <details>
 
-​<summary> :grin: RWD에 대한 상세 내용을 보려면 클릭하세요</summary>
+​<summary> :grin: RWD에 대한 상세 내용을 보시려면 이 글을 클릭하세요 !! :grin: </summary>
 
 
 #### ◎ 반응형 웹디자인이란
