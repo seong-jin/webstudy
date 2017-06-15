@@ -16,7 +16,7 @@
 
 - [History](./history/README.md) : 그날그날의 안건들 시간/날짜순으로 정리
 - [Homeworks](./homeworks/README.md) : 당일 이론 or 실습 달성목표
-- [etc](./etc/README.md) : 면접 내용 정리 등
+- [etc](./etc/README.md) : 면접 내용 등 기타 이론 정리
 
 
 
