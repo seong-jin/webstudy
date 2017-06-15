@@ -19,8 +19,9 @@
 
 
 * 면접
-  * [Interview01 (2017-06-14)](./interview01.md) 
+  * [Interview01](./interview01.md) 
 * 기타
+  * [가상 요소](./pseudo-element.md)
 
 
 
