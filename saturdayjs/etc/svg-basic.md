@@ -1,11 +1,8 @@
 
 # SVG 기초 내용 정리
 
-## ◎ 목차
 
-1. [SVG 란?](#1-SVG-란)
-2. [Basic Drawing](#2-Basic-Drawing)
-
+[TOC]
 
 <br>
 
@@ -25,6 +22,7 @@
     <!-- SVG detail code -->
   </svg>
   ```
+
 
 
 
@@ -59,6 +57,7 @@
 
 
 
+
 <br>
 
 ### 2-2. Rectangles
@@ -79,11 +78,12 @@
 
   ```html
   <svg height="300" width="100" xmlns="http//www.w3.org/2000/svg" version="1.1">
-    <rect height="80" width="100" />
-    <rect height="50" width="80" fill="white" x="10" y="10" />
-    <rect height="10" width="40" x="30" y="90" />
+      <rect height="80" width="100" />
+      <rect height="50" width="80" fill="white" x="10" y="10" />
+      <rect height="10" width="40" x="30" y="90" />
   </svg>
   ```
+
 
 
 
@@ -115,6 +115,7 @@
   ```html
   <circle cx="40" cy="105" r="3" fill="white" />
   ```
+
 
 
 
@@ -158,10 +159,10 @@
 
 ```html
 <svg height="110" width="80" xmlns="http//www.w3.org/2000/svg" version="1.1">
-  <rect height="100" width="70" fill="white" stroke="#ff2626"
-      stroke-width="10" x="5" y="5"
-      rx="5" />
-  <circle cx="40" cy="105" r="3" fill="white" />
+    <rect height="100" width="70" fill="white" stroke="#ff2626"
+        stroke-width="10" x="5" y="5"
+        rx="5" />
+    <circle cx="40" cy="105" r="3" fill="white" />
 </svg>
 ```
 
@@ -174,9 +175,9 @@
 ```css
 circle.home-btn {animation: grow 2s infinite; transform-origin: center;}
 @keyframes grow {
-  0%   {transform: scale(1);}
-  50%  {transform: scale(0.8);}
-  100% {transform: scale(1);}
+    0%   {transform: scale(1);}
+    50%  {transform: scale(0.8);}
+    100% {transform: scale(1);}
 }
 ```
 
