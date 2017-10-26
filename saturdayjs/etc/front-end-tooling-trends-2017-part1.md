@@ -6,9 +6,9 @@
 
 
 
-* 작 성 자 : 어성진
-* 최초 작성 : 2017-07-03
-* 최종 수정 : 2017-07-04
+작 성 자 : 어성진
+최초 작성 : 2017-07-03
+최종 수정 : 2017-07-04
 
 
 
@@ -274,12 +274,12 @@ http://cssgridgarden.com/
 6-3. SMACSS : Scalable and Modular Architecture for CSS
     Jonathan Snook에 의해 만들어진 CSS 방법론
     CSS에 대한 확장형 모듈식 구조
-    CSS의 프레임워크가 아닌 하나의 스타일 가이드   
+    CSS의 프레임워크가 아닌 하나의 스타일 가이드
 
 SMACSS의 핵심은 범주화(Categorization)이다.
 CSS 규칙을 범주화 함으로써 패턴을 체계적으로 정리하게 되면,
 코드량이 감소하고,  유지보수가 용이해지며, 스타일에 일관성을 줄 수 있다.
-​    
+​
 * SMACSS의 5가지 규칙
     Base : 기본규칙 (Reset, Default, Variables, Mixins, etc)을 정의
     Layout : 페이지를 섹션으로 나누는 것으로 하나 이상의 모듈을 포함한다.

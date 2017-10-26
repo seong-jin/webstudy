@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<title>SVG Basic</title>
+	<style>
+	.svgwrap {padding:10px; margin:10px 0; background:#ccc;}
+	p {margin:1em 0 0.2em;}
+	circle.home-btn {animation: grow 2s infinite; transform-origin: center;}
+	@keyframes grow {
+		0%   {transform: scale(1.0);}
+		50%  {transform: scale(0.5);}
+		100% {transform: scale(1.0);}
+	}
+	</style>
+</head>
+<body>
+
+<h1>SVG Basic</h1>
+<section>
+	<h2>Drawing Rectangle</h2>
+	<div class="svgwrap">
+		<p>Moniter Icon</p>
+		<svg height="100" width="200" xmlns="http//www.w3.org/2000/svg" version="1.1">
+			<rect height="80" width="100" />
+			<rect height="50" width="80" fill="white" x="10" y="10" />
+			<rect height="10" width="40" x="30" y="90" />
+		</svg>
+
+		<p>Phone Icon</p>
+		<svg height="110" width="80" xmlns="http//www.w3.org/2000/svg" version="1.1">
+			<rect height="100" width="70" fill="white" stroke="#ff2626" stroke-width="10" x="5" y="5" rx="5" />
+			<circle class="home-btn" cx="40" cy="105" r="3" fill="white" />
+		</svg>
+	</div>
+</section>
+</body>
+</html>
