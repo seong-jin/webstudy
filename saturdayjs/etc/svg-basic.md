@@ -2,8 +2,11 @@
 
 # SVG 기초 내용 정리
 
+
+
 <br>
-#### ◎ 목차
+
+## ◎ 목차
 
 1. SVG 란?
 2. How to Make SVG?
@@ -134,7 +137,10 @@
   <ellipse cx="40" cy="105" r="3" fill="blue" rx="10" ry="25" />
   ```
 
+
+
 <br>
+
 ### 2-6. Rounding Rectangle Corners
 
 * `ellipse` 속성( `rx`, `ry` )을 활용하여 직사각형의 코너에 라운드를 줄 수 있다.
@@ -205,7 +211,7 @@ circle.home-btn {animation: grow 2s infinite; transform-origin: center;}
 
 <br><br>
 
-#### ◎ 용어정리
+## ◎ 용어정리
 
 * raster image
   * 레스터 이미지 : jpg, png, gif 등 의 픽셀기반 이미지
