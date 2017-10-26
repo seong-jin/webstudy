@@ -1,18 +1,17 @@
 
-
 # SVG 기초 내용 정리
 
 ## ◎ 목차
 
-1. SVG 란?
-2. Basic Drawing
+1. [SVG 란?](#1-SVG-란)
+2. [Basic Drawing](#2-Basic-Drawing)
 
 
 <br>
 
 
 
-## 1. SVG 란 ?
+## 1. SVG 란
 
 * **S**calable **V**ector **G**raphics
 * 백터기반 이미지로 모든 미디어 사이즈에 대응
@@ -32,6 +31,7 @@
 <br>
 
 ## 2. Basic Drawing
+
 ### 2-0. SVG 설정
 
 가장 먼저 SVG가 보일 창을 설정해야 된다.
@@ -130,7 +130,8 @@
   * `ry` : X축 반지름 (radius y axes)
 * 예) (50, 50) 의 위치에 X축 반지름 10px, Y축 반지름 25px의 파란색 원 그리기
   ```html
-  <ellipse cx="40" cy="105" r="3" fill="blue" rx="10" ry="25" />
+  <ellipse cx="40" cy="105" r="3" fill="blue"
+      rx="10" ry="25" />
   ```
 
 
