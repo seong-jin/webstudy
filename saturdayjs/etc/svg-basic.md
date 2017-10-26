@@ -9,7 +9,7 @@
 ## ◎ 목차
 
 1. SVG 란?
-2. How to Make SVG?
+2. Basic Drawing
 
 
 <br>
