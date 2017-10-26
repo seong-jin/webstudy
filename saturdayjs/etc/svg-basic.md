@@ -1,13 +1,18 @@
+
+
 # SVG 기초 내용 정리
 
 <br>
 #### ◎ 목차
 
 1. SVG 란?
-1. How to Make SVG?
+2. How to Make SVG?
 
 
 <br>
+
+
+
 ## 1. SVG 란 ?
 
 * **S**calable **V**ector **G**raphics
@@ -23,7 +28,10 @@
   </svg>
   ```
 
+
+
 <br>
+
 ## 2. Basic Drawing
 ### 2-0. SVG 설정
 
@@ -38,7 +46,10 @@
 </svg>
 ```
 
+
+
 <br>
+
 ### 2-1. SVG 기본 속성
 
 * 좌표
@@ -47,7 +58,10 @@
 * fill
   * 색 채우기 속성으로 기본값은 black( `#000000` ) 이다.
 
+
+
 <br>
+
 ### 2-2. Rectangles
 
 * `rect` 요소를 사용하여 직사각형 그리기
@@ -72,7 +86,10 @@
   </svg>
   ```
 
+
+
 <br>
+
 ### 2-3. Stroke 속성
 
 * 70 * 100 사이즈의 흰색 사각형에 색상 `#ff2626` 의 10px 테두리 추가
@@ -84,7 +101,10 @@
       stroke="#ff2626" stroke-width="10" x="5" y="5" />
   ```
 
+
+
 <br>
+
 ### 2-4. Circle
 
 * `circle` 요소를 사용하여 원 그리기
@@ -97,7 +117,10 @@
   <circle cx="40" cy="105" r="3" fill="white" />
   ```
 
+
+
 <br>
+
 ### 2-5. Ellipses
 
 * `ellipse` 요소를 사용하여 타원 그리기
@@ -124,7 +147,10 @@
       rx="5" />
   ```
 
+
+
 <br>
+
 ### 종합예제 - iPhone Icon 만들기
 
 ```html
@@ -136,7 +162,10 @@
 </svg>
 ```
 
+
+
 <br>
+
 ## 2-7. Animation
 
 ```css
@@ -179,8 +208,8 @@ circle.home-btn {animation: grow 2s infinite; transform-origin: center;}
 #### ◎ 용어정리
 
 * raster image
-	* 레스터 이미지 : jpg, png, gif 등 의 픽셀기반 이미지
-	* 반대) vector image
+  * 레스터 이미지 : jpg, png, gif 등 의 픽셀기반 이미지
+  * 반대) vector image
 
 <br><br>
 
