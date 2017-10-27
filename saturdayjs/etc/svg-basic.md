@@ -337,7 +337,7 @@
     ```css
     polygon {
       fill: #008b6f;
-      stroke: #000; /* 속성값 black 와 동일 */
+      stroke: #000;
       stroke-width: 2px;
     }
     ```
