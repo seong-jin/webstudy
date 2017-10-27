@@ -300,7 +300,7 @@
   * `stroke-width` : 테두리 두께
   * `fill` : 색상
 
-* 예) 중앙정렬 (134, 142), 60px #f6f7f3 fantasy 폰트, 3px 검은색 테두리의 `SVG` 문구
+* 예) 중앙정렬 (134, 142), 60px `#f6f7f3` `fantasy` 폰트, 3px 검은색 테두리의 `SVG` 문구
   * HTML
     ```html
     <!-- text 요소는 닫는 태그가 있다!! -->
