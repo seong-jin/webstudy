@@ -394,9 +394,9 @@
 
 <br>
 
-## 4. Level 3. Grouping and Controll
+## 4. Level 3. Grouping and Control
 
-> SVG 요소에 대한 그룹을 지정하고 Controll 하는 방법을 배워보자.
+> SVG 요소에 대한 그룹을 지정하고 Control 하는 방법을 배워보자.
 
 
 
