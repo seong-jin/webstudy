@@ -414,6 +414,28 @@
 
 
 
+<br><br>
+
+
+
+## ◎ 참고
+
+* Polygon Graphic & Animation
+  * https://onextrapixel.com/polygon-graphics-what-they-are-examples-and-tutorials/
+  * https://www.polygonheroes.com/
+  * http://blog.grayghostvisuals.com/js/animated-polygon-art/
+  * https://teamtreehouse.com/library/episode-132-polygon-art-colors-scrolling
+* Online SVG Editor
+  * [Method Draw](http://editor.method.ac/)
+  * [Mondrian](https://mondrian.io/)
+  * [SVG Edit](https://svg-edit.github.io/svgedit/releases/svg-edit-2.8.1/svg-editor.html)
+
+
+
+
+
+
+
 
 
 <br><br>
