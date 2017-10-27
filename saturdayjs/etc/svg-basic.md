@@ -209,8 +209,6 @@
 
 
 
-<br>
-
 ### 3-1. Start off with a Circle
 
 * viwport : 268 * 268
