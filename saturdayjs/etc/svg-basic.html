@@ -6,7 +6,8 @@
 	<meta http-equiv="X-UA-Compatible" content="ie=edge">
 	<title>SVG Basic</title>
 	<style>
-	.svgwrap {padding:10px; margin:10px 0; background:#ccc;}
+	.svgwrap {padding:10px; margin:10px 0;}
+	.svgwrap svg {background:#ccc;}
 	p {margin:1em 0 0.2em;}
 	circle.home-btn {animation: grow 2s infinite; transform-origin: center;}
 	@keyframes grow {
@@ -14,12 +15,17 @@
 		50%  {transform: scale(0.5);}
 		100% {transform: scale(1.0);}
 	}
+
+	.sec-02 circle {fill: none; stroke: #008b6f; stroke-width: 7px;}
+	.sec-02 line {stroke: black; stroke-width: 5px;}
+	.sec-02 text {font-size: 60px; text-anchor: middle; font-family: fantasy; stroke: #000; stroke-width: 3px; fill: #f6f7f3;}
+	.sec-02 polygon {fill: #008b6f; stroke: black;  stroke-width: 2px;}
 	</style>
 </head>
 <body>
 
 <h1>SVG Basic</h1>
-<section>
+<section class="sec-01">
 	<h2>Drawing Rectangle</h2>
 	<div class="svgwrap">
 		<p>Moniter Icon</p>
@@ -33,6 +39,18 @@
 		<svg height="110" width="80" xmlns="http//www.w3.org/2000/svg" version="1.1">
 			<rect height="100" width="70" fill="white" stroke="#ff2626" stroke-width="10" x="5" y="5" rx="5" />
 			<circle class="home-btn" cx="40" cy="105" r="3" fill="white" />
+		</svg>
+	</div>
+</section>
+
+<section class="sec-02">
+	<h2>Drawing Multiple Shapes</h2>
+	<div class="svgwrap">
+		<svg height="268" width="268" xmlns="http//www.w3.org/2000/svg" version="1.1">
+			<circle cx="134" cy="134" r="130" />
+			<line x1="47" y1="198" x2="221" y2="198" />
+			<polygon points="52,190 134,30 216,190" />
+			<text x="134" y="142">SVG</text>
 		</svg>
 	</div>
 </section>

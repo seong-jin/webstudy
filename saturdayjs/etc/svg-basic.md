@@ -1,5 +1,5 @@
 
-# SVG 기초 내용 정리 (작업율 30%)
+# SVG 기초 내용 정리 (작업율 50%)
 
 
 [TOC]
@@ -14,7 +14,7 @@
 * 백터기반 이미지로 모든 미디어 사이즈에 대응
 * 외부파일로 적용 : `<img>` 요소를 사용하여 이미 만들어진 SVG파일을 HTML에 적용
   ```html
-  <img src="our_first.svg">
+  <img src="our_first.svg" alt="SVG 이미지">
   ```
 * HTML 내부에 작성 : SVG파일은 XML 타입으로 작성되어 있으므로, HTML에 직접 작성할 수 있다.
   ```html
@@ -28,7 +28,7 @@
 
 <br>
 
-## 2. Basic Drawing
+## 2. Level 1 - Basic Drawing Ⅰ
 
 ### 2-0. SVG 설정
 
@@ -50,10 +50,10 @@
 ### 2-1. SVG 기본 속성
 
 * 좌표
-  * 기준 : CSS의 position 속성과 같이 (0, 0)는 왼쪽 상단
-  * (10, 20) 위치표현 : `x="10" y="20"`
+  > 기준 : CSS의 position 속성과 같이 (0, 0)는 왼쪽 상단
+  > (10, 20) 위치표현 : `x="10" y="20"`
 * fill
-  * 색 채우기 속성으로 기본값은 black( `#000000` ) 이다.
+  > 색 채우기 속성으로 기본값은 black( `#000000` ) 이다.
 
 
 
@@ -63,7 +63,7 @@
 ### 2-2. Rectangles
 
 * `rect` 요소를 사용하여 직사각형 그리기
-* **주의** : `rect` 와 같이 닫는 태그가 없는 단일 태그 형식일 경우 `/>` 로 태그를 마침
+* **주의** : `rect` 와 같이 닫는 태그가 없는 단일 태그 형식일 경우 **`/>`** 로 태그를 마침
   ```html
   <rect property="value" />
   ```
@@ -102,6 +102,7 @@
 
 
 
+
 <br>
 
 ### 2-4. Circle
@@ -137,6 +138,7 @@
 
 
 
+
 <br>
 
 ### 2-6. Rounding Rectangle Corners
@@ -150,6 +152,7 @@
       stroke="#ff2626" stroke-width="10" x="5" y="5"
       rx="5" />
   ```
+
 
 
 
@@ -170,25 +173,231 @@
 
 <br>
 
-## 2-7. Animation
+### 2-7. Animation
 
-```css
-circle.home-btn {animation: grow 2s infinite; transform-origin: center;}
-@keyframes grow {
-    0%   {transform: scale(1);}
-    50%  {transform: scale(0.8);}
-    100% {transform: scale(1);}
-}
-```
+> CSS를 사용하여 Amination 효과 및 일부 스타일 변경이 가능하다.
+> (스타일 변경 : 다음 chapter 확인)
 
-```html
-<svg height="110" width="80" xmlns="http//www.w3.org/2000/svg" version="1.1">
-  <rect height="100" width="70" fill="white" stroke="#ff2626"
-      stroke-width="10" x="5" y="5"
-      rx="5" />
-  <circle class="home-btn" cx="40" cy="105" r="3" fill="white" />
-</svg>
-```
+* HTML
+  ```html
+  <svg height="110" width="80" xmlns="http//www.w3.org/2000/svg" version="1.1">
+    <rect height="100" width="70" fill="white" stroke="#ff2626"
+        stroke-width="10" x="5" y="5"
+        rx="5" />
+    <circle class="home-btn" cx="40" cy="105" r="3" fill="white" />
+  </svg>
+  ```
+
+* CSS
+  ```css
+  circle.home-btn {animation: grow 2s infinite; transform-origin: center;}
+  @keyframes grow {
+      0%   {transform: scale(1);}
+      50%  {transform: scale(0.8);}
+      100% {transform: scale(1);}
+  }
+  ```
+
+
+
+<br><br>
+
+## 3. Level 2 - Basic Drawing Ⅱ
+
+> Circle, Polygon, Line, Text 가 조합된 SVG를 만들어 보자.
+
+
+
+<br>
+
+### 3-1. Start off with a Circle
+
+* viwport : 268 * 268
+
+* circle
+  * 반지름 : 130px
+  * 테두리 : #008b6f, 7px
+  * 색 채움 : 없음
+
+* source
+
+  ```html
+  <svg height="268" width="268" xmlns="http//www.w3.org/2000/svg" version="1.1">
+  	<circle cx="134" cy="134" r="130" fill="none" stroke="#008b6f" stroke-width="7" />
+  </svg>
+  ```
+
+
+
+<br>
+
+### 3-2. CSS를 활용한 스타일 분리
+
+* SVG 파일의 스타일은 CSS 로 분리 가능하다.
+
+* 단, **좌표 (coordinates) 관련 속성**은 반드시 **인라인 코드로 작성**해야 된다!
+
+* HTML - 좌표값은 CSS로 분리할 수 없음!
+
+  ```html
+  <svg height="268" width="268" xmlns="http//www.w3.org/2000/svg" version="1.1">
+  	<circle cx="134" cy="134" r="130" />
+  </svg>
+  ```
+
+* CSS - 단위식별자(unit identifier) `px` 사용
+
+  ```css
+  circle {
+    fill: none;
+    stroke: #008b6f;
+    stroke-width: 7px;
+  }
+  ```
+
+
+
+
+<br>
+
+### 3-3. Line
+
+* `line` 요소를 사용하여 라인 그리기
+* 필수 속성
+  * `x1`, `y1` : 시작 점 좌표
+  * `x2`, `y2` : 끝 점 좌표
+
+* 예) 시작점(47, 198) 끝점(221, 198) 인 5px 두께의 검은 선 그리기
+  * HTML
+    ```html
+    <svg ...> <!-- 이후 코드에서 생략 -->
+    	<line x1="47" y1="198" x2="221" y2="198" />
+    </svg>
+    ```
+  * CSS
+    ```css
+    line {
+      stroke: black;
+      stroke-width: 5px;
+    }
+    ```
+
+<br>
+### 3-4. SVG Text Element
+
+* `text` 요소를 사용하여 SVG에 텍스트 추가하기
+
+* **참고** : `text` 요소는 닫는 태그가 있음
+
+* 필수 속성
+  * `x`, `y` : 기준점(anchor)
+    * `text` 요소의 기본 기준점은 **좌측하단**이다.
+
+* 추가 속성
+  * `text-anchor` : 기준점 변경
+    * `start` : 좌측하단 (default 속성값)
+    * `middle` : 중앙하단
+    * `end` : 우측하단
+  * `font-size` : 폰트 사이즈
+  * `font-family` : 폰트 종류
+  * `stroke` : 테두리 색상
+  * `stroke-width` : 테두리 두께
+  * `fill` : 색상
+
+* 예) 중앙정렬 (134, 142), 60px #f6f7f3 fantasy 폰트, 3px 검은색 테두리의 `SVG` 문구
+  * HTML
+    ```html
+    <!-- text 요소는 닫는 태그가 있다!! -->
+    <!-- 좌표값은 CSS로 분리할 수 없다!! -->
+    <text x="134" y="142">SVG</text>
+    ```
+  * CSS
+    ```css
+    text {
+      font-size: 60px;
+      text-anchor: middle;
+      font-family: fantasy;
+      stroke: #000;
+      stroke-width: 3px;
+      fill: #f6f7f3;
+    }
+    ```
+
+<br>
+
+### 3-5. SVG Polygon Element
+
+* `polygon` 요소를 이용하여 다각형 그리기
+* 필수 속성
+  * `points` : 좌표값
+    * `x`, `y` 좌표쌍으로 되어 있으며 각 꼭지점 좌표는 공백으로 구분한다.
+    * `points="x1,y1 x2,y2 x3,y3 ..."`
+* 예) 검은색 2px 테두리를 가진 #008b6f 색상의 삼각형(52,190 134,30 216,190) 그리기
+  * HTML
+    ```html
+    <polygon points="52,190 134,30 216,190" />
+    ```
+  * CSS
+    ```css
+    polygon {
+      fill: #008b6f;
+      stroke: #000; /* 속성값 black 와 동일 */
+      stroke-width: 2px;
+    }
+    ```
+
+
+
+<br>
+
+### 3-6 SVG 요소 간 우선 순위
+> HTML 에서 코드가 아래쪽에 위치할 수록 화면 위쪽에 노출된다.
+
+#### 완성된 뱃지 유닛
+
+* HTML
+  ```html
+  <svg height="268" width="268" xmlns="http//www.w3.org/2000/svg" version="1.1">
+  	<circle cx="134" cy="134" r="130" />
+  	<line x1="47" y1="198" x2="221" y2="198" />
+  	<polygon points="52,190 134,30 216,190" />
+  	<text x="134" y="142">SVG</text>
+  </svg>
+  ```
+* CSS
+  ```css
+  circle {
+    fill: none;
+    stroke: #008b6f;
+    stroke-width: ;
+  }
+  line {
+    stroke: black;
+    stroke-width: 5px;
+  }
+  text {
+    font-size: 60px;
+    text-anchor: middle;
+    font-family: fantasy;
+    stroke: #000;
+    stroke-width: 3px;
+    fill: #f6f7f3;
+  }
+  polygon {
+    fill: #008b6f;
+    stroke: black;
+    stroke-width: 2px;
+  }
+  ```
+
+
+
+<br>
+
+## 4. Level 3. Grouping and Controll
+
+> SVG 요소에 대한 그룹을 지정하고 Controll 하는 방법을 배워보자.
+
 
 
 
@@ -218,3 +427,4 @@ circle.home-btn {animation: grow 2s infinite; transform-origin: center;}
 <br><br>
 
 ---
+
