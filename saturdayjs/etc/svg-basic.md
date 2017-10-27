@@ -144,7 +144,7 @@
 * `ellipse` 속성( `rx`, `ry` )을 활용하여 직사각형의 코너에 라운드를 줄 수 있다.
 * CSS의 border-radius에 해당
 * rx 와 ry 의 값이 같을 경우 두 속성 중 한가지만 입력해도 된다.
-* 예) 2-2-2 의 직사각형에 5px 의 라운드 주기
+* 예) **2-2. Rectangles** 의 직사각형에 5px 의 라운드 주기
   ```html
   <rect height="100" width="70" fill="white"
       stroke="#ff2626" stroke-width="10" x="5" y="5"
