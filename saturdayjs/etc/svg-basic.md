@@ -70,11 +70,9 @@
 
 * 예) `rect` 를 이용한 모니터 아이콘 만들기
 
-  ```txt
-  1. 100(W) * 80(H) 의 직사각형
-  2. 50 * 80 의 직사각형, 좌표 이동, 흰색으로 채우기
-  3. 40 * 10 의 직사각형, 좌표 이동
-  ```
+  > (1) 100(W) * 80(H) 의 직사각형
+  > (2) 50 * 80 의 직사각형, 좌표 이동, 흰색으로 채우기
+  > (3) 40 * 10 의 직사각형, 좌표 이동
 
   ```html
   <svg height="300" width="100" xmlns="http//www.w3.org/2000/svg" version="1.1">
@@ -180,7 +178,7 @@
 
 * HTML
   ```html
-  <svg height="110" width="80" xmlns="http//www.w3.org/2000/svg" version="1.1">
+  <svg height="110" width="80" ...> <!-- 이후 코드에서 생략 -->
     <rect height="100" width="70" fill="white" stroke="#ff2626"
         stroke-width="10" x="5" y="5"
         rx="5" />
@@ -190,7 +188,10 @@
 
 * CSS
   ```css
-  circle.home-btn {animation: grow 2s infinite; transform-origin: center;}
+  circle.home-btn {
+    animation: grow 2s infinite;
+    transform-origin: center;
+  }
   @keyframes grow {
       0%   {transform: scale(1);}
       50%  {transform: scale(0.8);}
@@ -216,14 +217,14 @@
 
 * circle
   * 반지름 : 130px
-  * 테두리 : #008b6f, 7px
+  * 테두리 : `#008b6f`, 7px
   * 색 채움 : 없음
 
 * source
 
   ```html
-  <svg height="268" width="268" xmlns="http//www.w3.org/2000/svg" version="1.1">
-  	<circle cx="134" cy="134" r="130" fill="none" stroke="#008b6f" stroke-width="7" />
+  <svg height="268" width="268" ...> <!-- 이후 코드에서 생략 -->
+    <circle cx="134" cy="134" r="130" fill="none" stroke="#008b6f" stroke-width="7" />
   </svg>
   ```
 
@@ -240,9 +241,7 @@
 * HTML - 좌표값은 CSS로 분리할 수 없음!
 
   ```html
-  <svg height="268" width="268" xmlns="http//www.w3.org/2000/svg" version="1.1">
-  	<circle cx="134" cy="134" r="130" />
-  </svg>
+  <circle cx="134" cy="134" r="130" />
   ```
 
 * CSS - 단위식별자(unit identifier) `px` 사용
@@ -270,9 +269,7 @@
 * 예) 시작점(47, 198) 끝점(221, 198) 인 5px 두께의 검은 선 그리기
   * HTML
     ```html
-    <svg ...> <!-- 이후 코드에서 생략 -->
-    	<line x1="47" y1="198" x2="221" y2="198" />
-    </svg>
+    <line x1="47" y1="198" x2="221" y2="198" />
     ```
   * CSS
     ```css
@@ -283,6 +280,7 @@
     ```
 
 <br>
+
 ### 3-4. SVG Text Element
 
 * `text` 요소를 사용하여 SVG에 텍스트 추가하기
@@ -332,7 +330,7 @@
   * `points` : 좌표값
     * `x`, `y` 좌표쌍으로 되어 있으며 각 꼭지점 좌표는 공백으로 구분한다.
     * `points="x1,y1 x2,y2 x3,y3 ..."`
-* 예) 검은색 2px 테두리를 가진 #008b6f 색상의 삼각형(52,190 134,30 216,190) 그리기
+* 예) 검은색 2px 테두리를 가진 `#008b6f` 색상의 삼각형(52,190 134,30 216,190) 그리기
   * HTML
     ```html
     <polygon points="52,190 134,30 216,190" />
@@ -348,6 +346,7 @@
 
 
 
+
 <br>
 
 ### 3-6 SVG 요소 간 우선 순위
@@ -358,10 +357,10 @@
 * HTML
   ```html
   <svg height="268" width="268" xmlns="http//www.w3.org/2000/svg" version="1.1">
-  	<circle cx="134" cy="134" r="130" />
-  	<line x1="47" y1="198" x2="221" y2="198" />
-  	<polygon points="52,190 134,30 216,190" />
-  	<text x="134" y="142">SVG</text>
+    <circle cx="134" cy="134" r="130" />
+    <line x1="47" y1="198" x2="221" y2="198" />
+    <polygon points="52,190 134,30 216,190" />
+    <text x="134" y="142">SVG</text>
   </svg>
   ```
 * CSS
@@ -392,6 +391,7 @@
 
 
 
+
 <br>
 
 ## 4. Level 3. Grouping and Controll
@@ -400,7 +400,9 @@
 
 
 
+다음시간에 계속.......
 
+<br><br><br><br>
 
 
 
