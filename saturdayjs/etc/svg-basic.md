@@ -62,13 +62,13 @@
 
 ### 2-2. Rectangles
 
-* `rect` 요소를 사용하여 직사각형 그리기
-* **주의** : `rect` 와 같이 닫는 태그가 없는 단일 태그 형식일 경우 **`/>`** 로 태그를 마침
+* `<rect>` 요소를 사용하여 직사각형 그리기
+* **주의** : `<rect>` 와 같이 닫는 태그가 없는 단일 태그 형식일 경우 **`/>`** 로 태그를 마침
   ```html
   <rect property="value" />
   ```
 
-* 예) `rect` 를 이용한 모니터 아이콘 만들기
+* 예) `<rect>` 를 이용한 모니터 아이콘 만들기
 
   > (1) 100(W) * 80(H) 의 직사각형  
   > (2) 50 * 80 의 직사각형, 좌표 이동, 흰색으로 채우기  
@@ -105,7 +105,7 @@
 
 ### 2-4. Circle
 
-* `circle` 요소를 사용하여 원 그리기
+* `<circle>` 요소를 사용하여 원 그리기
 * 필수 속성 : 원의 중심좌표와 반지름 값
   * `cx` : X축 중심좌표
   * `cy` : Y축 중심좌표
@@ -122,7 +122,7 @@
 
 ### 2-5. Ellipses
 
-* `ellipse` 요소를 사용하여 타원 그리기
+* `<ellipse>` 요소를 사용하여 타원 그리기
 * 필수 속성
   * `cx` : X축 중심좌표
   * `cy` : Y축 중심좌표
@@ -141,7 +141,7 @@
 
 ### 2-6. Rounding Rectangle Corners
 
-* `ellipse` 속성( `rx`, `ry` )을 활용하여 직사각형의 코너에 라운드를 줄 수 있다.
+* `<ellipse>` 요소의 속성( `rx`, `ry` )을 활용하여 직사각형의 코너에 라운드를 줄 수 있다.
 * CSS의 border-radius에 해당
 * rx 와 ry 의 값이 같을 경우 두 속성 중 한가지만 입력해도 된다.
 * 예) **2-2. Rectangles** 의 직사각형에 5px 의 라운드 주기
@@ -200,8 +200,11 @@
   ```
 
 
-
 <br><br>
+
+---
+
+<br>
 
 ## 3. Level 2 - Basic Drawing Ⅱ
 
@@ -259,7 +262,7 @@
 
 ### 3-3. Line
 
-* `line` 요소를 사용하여 라인 그리기
+* `<line>` 요소를 사용하여 라인 그리기
 * 필수 속성
   * `x1`, `y1` : 시작 점 좌표
   * `x2`, `y2` : 끝 점 좌표
@@ -281,13 +284,13 @@
 
 ### 3-4. SVG Text Element
 
-* `text` 요소를 사용하여 SVG에 텍스트 추가하기
+* `<text>` 요소를 사용하여 SVG에 텍스트 추가하기
 
-* **참고** : `text` 요소는 닫는 태그가 있음
+* **참고** : `<text>` 요소는 닫는 태그가 있음
 
 * 필수 속성
   * `x`, `y` : 기준점(anchor)
-    * `text` 요소의 기본 기준점은 **좌측하단**이다.
+    * `<text>` 요소의 기본 기준점은 **좌측하단**이다.
 
 * 추가 속성
   * `text-anchor` : 기준점 변경
@@ -323,7 +326,7 @@
 
 ### 3-5. SVG Polygon Element
 
-* `polygon` 요소를 이용하여 다각형 그리기
+* `<polygon>` 요소를 이용하여 다각형 그리기
 * 필수 속성
   * `points` : 좌표값
     * `x`, `y` 좌표쌍으로 되어 있으며 각 꼭지점 좌표는 공백으로 구분한다.
@@ -390,6 +393,10 @@
 
 
 
+<br><br>
+
+---
+
 <br>
 
 ## 4. Level 3. Grouping and Control
@@ -398,7 +405,168 @@
 
 
 
-다음시간에 계속.......
+### 4-0. 3개의 삼각형 만들기
+
+* 예) `#008b6f` 색상의  `black 1px` 테두리를 갖는 3개의 삼각형 
+
+  * 삼각형 좌표 1 : 7,10 12,0 17,10
+  * 삼각형 좌표 2 : 0,25 5,15 10,25
+  * 삼각형 좌표 3 : 15,25 20,15 25,25
+
+  ```html
+  <!-- fill, stroke, stroke-width 속성은 CSS로 분리 -->
+  <polygon points="7,10 12,0 17,10" />
+  <polygon points="0,25 5,15 10,25" />
+  <polygon points="15,25 20,15 25,25" />
+  ```
+
+
+
+<br>
+
+### 4-1. 3개의 삼각형 그룹만들기
+
+- `<g>` 요소를 이용하여 그룹을 지정할 수 있다.
+
+- `transform` 속성의 `translate()` 함수를 이용하여 동일한 값 만큼 위치를 변경할 수 있다.
+
+- 예) 3개의 삼각형을 (45, 67) 만큼 이동
+
+  ```html
+  <g transform="translate(45,67)">
+      <polygon points="7,10 12,0 17,10" />
+      <polygon points="0,25 5,15 10,25" />
+      <polygon points="15,25 20,15 25,25" />
+  </g>
+  ```
+
+- 예) 추가 그룹 생성 (198,67), (121.5,211)
+
+  - 배경 삼각형과 스타일이 겹치므로, `<g> ` 에 상속 스타일을 추가한다.
+  - HTML
+
+  ```html
+  <!-- ... -->
+  <polygon points="52,190 134,30 216,190" />
+  <!-- ... -->
+  <g class="triangle_group" transform="translate(45,67)">
+  	<polygon points="7,10 12,0 17,10" />
+  	<polygon points="0,25 5,15 10,25" />
+  	<polygon points="15,25 20,15 25,25" />
+  </g>
+  <g class="triangle_group" transform="translate(198,67)">
+  	<polygon points="7,10 12,0 17,10" />
+  	<polygon points="0,25 5,15 10,25" />
+  	<polygon points="15,25 20,15 25,25" />
+  </g>
+  <g class="triangle_group" transform="translate(121.5,211)">
+  	<polygon points="7,10 12,0 17,10" />
+  	<polygon points="0,25 5,15 10,25" />
+  	<polygon points="15,25 20,15 25,25" />
+  </g>
+  ```
+
+  * CSS
+
+  ```CSS
+  polygon {
+    fill: #008b6f;
+    stroke: black;
+    stroke-width: 2px;
+  }
+  .triangle_group polygon {
+    stroke-width:1px;
+  }
+  ```
+
+  ​
+
+<br>
+
+### 4-2. 추가적인 transform 속성 사용
+
+* `rotate()` 함수를 사용하여 그룹을 회전시킬 수 있다.
+
+  * rotate( `각도` `x 회전축 좌표` `y 회전축 좌표` )
+  * 각각의 인자는 공백으로 구분
+  * 각도 :  -360 ~ 360 까지의 값을 갖는다.
+
+* `scale()` 함수를 사용하여 그룹의 사이즈를 변경할 수 있다.
+
+  * scale( `배율` ) : 100% 배율  = `1`
+  * scale의 기준점 :  `좌상단` 
+
+* scale이 변경된 그룹의 **위치를 재조정** 하려면, `translate()` 를 **재선언**해야 됨
+
+* 예) 그룹 지정된 삼각형에 `rotate()`, `scale()` 적용. 변경된 스케일에 맞게 좌표 이동
+
+  ```html
+  <g class="first triangle_group" transform="translate(45,67) rotate(10 12.5 12.5)">
+  	<polygon points="7,10 12,0 17,10" />
+  	<polygon points="0,25 5,15 10,25" />
+  	<polygon points="15,25 20,15 25,25" />
+  </g>
+  <g class="second triangle_group" transform="translate(198,67) rotate(-10 12.5 12.5)">
+  	<polygon points="7,10 12,0 17,10" />
+  	<polygon points="0,25 5,15 10,25" />
+  	<polygon points="15,25 20,15 25,25" />
+  </g>
+  <g class="third triangle_group" transform="translate(121.5,211) scale(0.6) translate(8,8)">
+  	<polygon points="7,10 12,0 17,10" />
+  	<polygon points="0,25 5,15 10,25" />
+  	<polygon points="15,25 20,15 25,25" />
+  </g>
+  ```
+
+
+
+<br><br>
+
+---
+
+<br>
+
+## 5. Level 4. Responsively
+
+> 스크린 사이즈에 맞게 반응형 SVG 만들기
+
+
+
+### 5-0. 좌표계 (Coordinate Systems)
+
+* viewport는  SVG의 **기본 좌표계** (Basic Coordinate Systems)이다.
+  `<g>` 와 같이, 하나의 SVG 안에서 **중첩 좌표계** (Nested Coordinate Systems)를 가질 수 있다.
+
+  * 기본 좌표계 : **viewport**
+  * 중첩 좌표계 : **viewBox**
+
+* `<svg>`에 `viewBox`속성을 추가하고 width, height 값을 이동시킨다.
+
+* `viewBox`의 기준점을 지정한다.
+
+* viewBox="`X축 기준점` `Y축기준점` `width` `height`"
+
+  ```html
+  <svg height="268" width="268" xmlns="http//www.w3.org/2000/svg" version="1.1">
+  	<!-- detail code -->
+  </svg>
+  ```
+
+  ```html
+  <svg xmlns="http//www.w3.org/2000/svg" version="1.1" viewBox="0 0 268 268">
+  	<!-- detail code -->
+  </svg>
+  ```
+
+  ​
+
+
+
+
+
+
+
+
 
 <br><br><br><br>
 
@@ -416,7 +584,9 @@
 
 <br><br>
 
+------
 
+<br>
 
 ## ◎ 참고
 
