@@ -544,7 +544,7 @@
   * 기본 좌표계 : **viewport**
   * 중첩 좌표계 : **viewBox**
 
-* `<svg>`에 `viewBox`속성을 추가하고 width, height 값을 이동시킨다.
+* `<svg>`에 `viewBox`속성을 추가하고,  width, height 값을 viewBox 로 이동시킨다.
 
 * `viewBox`의 기준점을 지정한다.
 
@@ -562,9 +562,28 @@
   </svg>
   ```
 
+* 예) 넓이가 화면의 50%를 갖는 SVG 
+
+  * HTML
+
+  ```html
+  <svg xmlns="http//www.w3.org/2000/svg" version="1.1" viewBox="0 0 268 268">
+    <circle cx="134" cy="134" r="130" />
+    <!-- detail code -->
+  </svg>
+  ```
+
+  * CSS
+
+  ```css
+  svg {
+    height: auto;
+    width: 50%;  
+  }
+  /* detail style */
+  ```
+
   ​
-
-
 
 
 
@@ -594,6 +613,11 @@
 
 ## ◎ 참고
 
+* SVG 튜토리얼
+  * https://www.codeschool.com/courses/you-me-svg
+  * https://developer.mozilla.org/ko/docs/Web/SVG/Tutorial
+  * [SVG 대 캔버스: 선택 방법](https://msdn.microsoft.com/ko-kr/library/gg193983)
+  * [SVG 및 Canvas의 사용 예](https://msdn.microsoft.com/ko-kr/library/gg589488)
 * Polygon Graphic & Animation
   * https://onextrapixel.com/polygon-graphics-what-they-are-examples-and-tutorials/
   * https://www.polygonheroes.com/
