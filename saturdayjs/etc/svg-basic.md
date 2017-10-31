@@ -1,5 +1,5 @@
 
-# SVG 기초 내용 정리 (작업율 50%)
+# SVG 기초 내용 정리 (작업율 60%)
 
 
 [TOC]
@@ -449,20 +449,20 @@
   <!-- ... -->
   <polygon points="52,190 134,30 216,190" />
   <!-- ... -->
-  <g class="triangle_group" transform="translate(45,67)">
-  	<polygon points="7,10 12,0 17,10" />
-  	<polygon points="0,25 5,15 10,25" />
-  	<polygon points="15,25 20,15 25,25" />
+  <g class="first triangle_group" transform="translate(45,67)">
+      <polygon points="7,10 12,0 17,10" />
+      <polygon points="0,25 5,15 10,25" />
+      <polygon points="15,25 20,15 25,25" />
   </g>
-  <g class="triangle_group" transform="translate(198,67)">
-  	<polygon points="7,10 12,0 17,10" />
-  	<polygon points="0,25 5,15 10,25" />
-  	<polygon points="15,25 20,15 25,25" />
+  <g class="second triangle_group" transform="translate(198,67)">
+      <polygon points="7,10 12,0 17,10" />
+      <polygon points="0,25 5,15 10,25" />
+      <polygon points="15,25 20,15 25,25" />
   </g>
-  <g class="triangle_group" transform="translate(121.5,211)">
-  	<polygon points="7,10 12,0 17,10" />
-  	<polygon points="0,25 5,15 10,25" />
-  	<polygon points="15,25 20,15 25,25" />
+  <g class="third triangle_group" transform="translate(121.5,211)">
+      <polygon points="7,10 12,0 17,10" />
+      <polygon points="0,25 5,15 10,25" />
+      <polygon points="15,25 20,15 25,25" />
   </g>
   ```
 
@@ -502,19 +502,19 @@
 
   ```html
   <g class="first triangle_group" transform="translate(45,67) rotate(10 12.5 12.5)">
-  	<polygon points="7,10 12,0 17,10" />
-  	<polygon points="0,25 5,15 10,25" />
-  	<polygon points="15,25 20,15 25,25" />
+      <polygon points="7,10 12,0 17,10" />
+      <polygon points="0,25 5,15 10,25" />
+      <polygon points="15,25 20,15 25,25" />
   </g>
   <g class="second triangle_group" transform="translate(198,67) rotate(-10 12.5 12.5)">
-  	<polygon points="7,10 12,0 17,10" />
-  	<polygon points="0,25 5,15 10,25" />
-  	<polygon points="15,25 20,15 25,25" />
+      <polygon points="7,10 12,0 17,10" />
+      <polygon points="0,25 5,15 10,25" />
+      <polygon points="15,25 20,15 25,25" />
   </g>
   <g class="third triangle_group" transform="translate(121.5,211) scale(0.6) translate(8,8)">
-  	<polygon points="7,10 12,0 17,10" />
-  	<polygon points="0,25 5,15 10,25" />
-  	<polygon points="15,25 20,15 25,25" />
+      <polygon points="7,10 12,0 17,10" />
+      <polygon points="0,25 5,15 10,25" />
+      <polygon points="15,25 20,15 25,25" />
   </g>
   ```
 
@@ -548,13 +548,13 @@
 
   ```html
   <svg height="268" width="268" xmlns="http//www.w3.org/2000/svg" version="1.1">
-  	<!-- detail code -->
+      <!-- detail code -->
   </svg>
   ```
 
   ```html
   <svg xmlns="http//www.w3.org/2000/svg" version="1.1" viewBox="0 0 268 268">
-  	<!-- detail code -->
+      <!-- detail code -->
   </svg>
   ```
 
