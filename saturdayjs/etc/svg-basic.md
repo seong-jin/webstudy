@@ -360,6 +360,7 @@
   <svg height="268" width="268" xmlns="http//www.w3.org/2000/svg" version="1.1">
     <circle cx="134" cy="134" r="130" />
     <line x1="47" y1="198" x2="221" y2="198" />
+    <!-- polygon 요소를 text 요소보다 위쪽에 넣으면 삼각형 위에 텍스트가 노출됨 -->
     <polygon points="52,190 134,30 216,190" />
     <text x="134" y="142">SVG</text>
   </svg>
@@ -479,7 +480,6 @@
   }
   ```
 
-  ​
 
 <br>
 
@@ -525,6 +525,10 @@
 ---
 
 <br>
+
+
+
+[작업중]
 
 ## 5. Level 4. Responsively
 
