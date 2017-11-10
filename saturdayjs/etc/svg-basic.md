@@ -670,8 +670,9 @@
 * SVG 튜토리얼
   * https://www.codeschool.com/courses/you-me-svg
   * https://developer.mozilla.org/ko/docs/Web/SVG/Tutorial
-  * [SVG 대 캔버스: 선택 방법](https://msdn.microsoft.com/ko-kr/library/gg193983)
-  * [SVG 및 Canvas의 사용 예](https://msdn.microsoft.com/ko-kr/library/gg589488)
+  * http://tutorials.jenkov.com/svg/index.html
+  * [[MSDN] SVG 대 캔버스: 선택 방법](https://msdn.microsoft.com/ko-kr/library/gg193983)
+  * [[MSDN] SVG 및 Canvas의 사용 예](https://msdn.microsoft.com/ko-kr/library/gg589488)
 * Polygon Graphic & Animation
   * https://onextrapixel.com/polygon-graphics-what-they-are-examples-and-tutorials/
   * https://www.polygonheroes.com/
