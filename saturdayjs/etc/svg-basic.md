@@ -2,7 +2,12 @@
 # SVG 기초 내용 정리 (작업율 60%)
 
 
+
+## Table of Contents
+
 [TOC]
+
+
 
 <br>
 
@@ -25,6 +30,8 @@
 
 
 
+
+[ Top ↑ ](#Table-of-Contents)
 
 <br>
 
@@ -200,6 +207,12 @@
   ```
 
 
+
+
+
+
+[ Top ↑ ](#Table-of-Contents)
+
 <br><br>
 
 ---
@@ -350,6 +363,15 @@
 
 <br>
 
+### 3-6. Polyline
+
+* `<polyline>` 요소를 이용하여 열린 도형 생성
+* ​
+
+
+
+<br>
+
 ### 3-6. SVG 요소 간 우선 순위
 > HTML 코드 상, 아래쪽에 있을수록 화면 위쪽에 노출된다.
 
@@ -393,6 +415,10 @@
 
 
 
+
+
+
+[ Top ↑ ](#Table-of-Contents)
 
 <br><br>
 
@@ -520,6 +546,11 @@
 
 
 
+
+
+
+[ Top ↑ ](#Table-of-Contents)
+
 <br><br>
 
 ---
@@ -603,7 +634,7 @@
 
 
 
-
+[ Top ↑ ](#Table-of-Contents)
 
 <br><br>
 
@@ -646,6 +677,12 @@
 * raster image
   * 레스터 이미지 : jpg, png, gif 등 의 픽셀기반 이미지
   * 반대) vector image
+
+
+
+
+
+[ Top ↑ ](#Table-of-Contents)
 
 <br><br>
 
