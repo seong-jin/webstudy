@@ -33,6 +33,10 @@
 
 
 
+
+
+<br>
+
 [ Top ↑ ](#table-of-contents)
 
 <br>
@@ -211,11 +215,11 @@
 
 
 
-
+<br>
 
 [ Top ↑ ](#table-of-contents)
 
-<br><br>
+<br>
 
 ---
 
@@ -420,9 +424,13 @@
 
 
 
+
+
+<br>
+
 [ Top ↑ ](#table-of-contents)
 
-<br><br>
+<br>
 
 ---
 
@@ -549,11 +557,11 @@
 
 
 
-
+<br>
 
 [ Top ↑ ](#table-of-contents)
 
-<br><br>
+<br>
 
 ---
 
@@ -636,9 +644,11 @@
 
 
 
+<br>
+
 [ Top ↑ ](#table-of-contents)
 
-<br><br>
+<br>
 
 ------
 
@@ -647,6 +657,14 @@
 
 
 ## ◎ 참고
+
+* **지역링크**
+  *  `[Foo Bar](#foo-bar)`
+  * 텍스트는 모두 소문자로 넣는다.
+  * 빈칸은 `-` 를 사용하여 연결한다.
+
+
+
 
 * https://www.w3.org/TR/SVG/
 * SVG 튜토리얼
@@ -684,9 +702,13 @@
 
 
 
+
+
+<br>
+
 [ Top ↑ ](#table-of-contents)
 
-<br><br>
+<br>
 
 ---
 
