@@ -372,7 +372,12 @@
 ### 3-6. Polyline
 
 * `<polyline>` 요소를 이용하여 열린 도형 생성
-* ​
+* 필수 속성
+  * `points` : `<polygon>` 의 points 속성과 동일
+  * `fill` : 열린 도형이므로 기본값 `none` 으로 한다.
+
+
+
 
 
 
