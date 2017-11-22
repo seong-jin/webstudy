@@ -143,7 +143,7 @@
 
 ## 2. PostCSS
 
-* JavaScript Plugin을 이용한 **CSS 변환도구**로 **pre-processor와 구별**된다.
+* JavaScript Plugin 또는 각종 Editor의 확장기능으로 제공되는 **CSS 변환도구** 로 **pre-processor와 구별**된다.
 
 
 
