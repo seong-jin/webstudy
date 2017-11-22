@@ -20,21 +20,21 @@
 
 [TOC]
 
-
+<br>
 
 ## 0. 들어가기에 앞서
 
 
 오류가 있는 내용(링크 등)에 대해서는 댓글로 정정 요청 부탁드립니다.
 
-본 글은 **Part 1 (CSS)** 와 **Part 2 (JavaScript)**로 분리하여 작성되며,
+본 글은 **Part 1 (CSS)** 와 **Part 2 (JavaScript)** 로 분리하여 작성되며,
 추후 ``내용추가`` / ``오류수정`` 등으로 업데이트 될 예정입니다.
 
-본 글과 함께, 하기 [주요 참고내용]을 같이 보시면 최신 트렌드를 이해하는데 많은 도움이 되리라 생각합니다.
+본 글과 함께, 하기 [주요 참고 내용] 을 같이 보시면 최신 트렌드를 이해하는데 많은 도움이 되리라 생각합니다.
 
 
 
-### [주요 참고내용]
+### [주요 참고 내용]
 
 * Front-end Tooling Trends for 2017 : https://www.sitepoint.com/front-end-tooling-trends-2017
 * Developer-rodadmap : https://github.com/kamranahmedse/developer-roadmap
@@ -42,6 +42,8 @@
 
 
 
+
+<br>
 
 그럼 출발~~
 
@@ -53,8 +55,9 @@
 
 ## 1. Pre-processor
 
-* CSS를 확장하는 스크립팅 언어. 컴파일러를 통하여 브라우저에서 사용할 수 있는 일반 CSS 문법 형태로 변환한다.  
-  (브라우저는 Pre-processor의 문법을 인식하지 못하므로 실제 사용을 위해선 CSS로의 변환과정이 필요하다.)
+* CSS를 확장하는 스크립팅 언어
+* 컴파일러를 통하여 브라우저에서 사용할 수 있는 일반 CSS 문법 형태로 변환한다.
+* 브라우저는 Pre-processor의 문법을 인식하지 못하므로 실제 사용을 위해선 CSS로의 변환과정이 필요하다.
 * ``변수`` , ``중첩`` , ``믹스인`` , ``선택자상속`` 등의 기능을 제공한다.
 
 
@@ -62,9 +65,11 @@
 
 
 
+<br>
+
 ### 1-1. Sass (Syntactically Awesome Styles Sheets)
 
-    변수 / 중첩(Nesting)표현 / 믹스인(Mixins) / 함수 / 익스텐션(Extension) / 연산 / 보간법(Interpolation) 등 다양한 기능 제공
+    변수, 중첩(Nesting)표현, 믹스인(Mixins), 함수, 익스텐션(Extension), 연산, 보간법(Interpolation) 등 다양한 기능 제공
 
 * Sass 참고 내용
 
@@ -78,12 +83,16 @@
 
 
 
+<br>
+
 #### 1-1-a. 오리지널 Ruby-Sass 사용
 
 * Ruby 환경에서 Sass를 설치 / 컴파일 한다.  
 * [참고] Mac OS에는 Ruby가 기본 설치되어 있으며, Windows 에서는 별도 설치해야 함.
 
 
+
+<br>
 
 #### 1-1-b. GUI 어플리케이션 사용
 
@@ -100,11 +109,14 @@
 
 
 
+<br>
+
 #### 1-1-c. LibSass 사용
 
     Sass는 원래 Ruby로 작성되었으나 C 언어로 작성된 LibSass 를 사용하면,
     더 이상 Ruby에 종속되지 않고 많은 Wrapper를 사용할 수 있으며,
     거의 모든 언어와 Sass를 쉽게 통합할 수 있다.
+    
     또한, Ruby-Sass 대비 최대 4000% 빠른 컴파일 성능을 갖는다.
 
 * Wrappers
@@ -112,6 +124,8 @@
 * Wrappers 중 Node 환경의 **Node-Sass**가 많은 인기를 얻고 있다.
 
 
+
+<br>
 
 ### 1-2. Less
 
@@ -128,9 +142,11 @@
 
 ## 2. PostCSS
 
-* JavaScript Plugin을 이용한 CSS 변환도구로 **pre-processor와 구별**된다.
+* JavaScript Plugin을 이용한 **CSS 변환도구**로 **pre-processor와 구별**된다.
 
 
+
+<br>
 
 ### 2-1. Autoprefixer
 
@@ -157,6 +173,8 @@
 
 
 
+<br>
+
 ### 2-2. cssnext
 
 > 새로운 CSS spec 사용 시, 현 브라우저에 따르는 호환구문을 자동 제공해 준다.  
@@ -166,12 +184,12 @@
 
   ```css
   :root {
-  	--red: #d33;
+    --red: #d33;
   }
   a {
-  	&:hover {
-  		color: color(var(--red) a(54%));
-  	}
+    &:hover {
+      color: color(var(--red) a(54%));
+    }
   }
   ```
 
@@ -179,12 +197,14 @@
 
   ```css
   a:hover {
-  	color: #dd3333;
-  	color: rgba(221, 51, 51, 0.54);
+    color: #dd3333;
+    color: rgba(221, 51, 51, 0.54);
   }
   ```
 
 
+
+<br>
 
 ### 2-3. CSS Modules
 
@@ -195,7 +215,7 @@
 
   ```css
   .name {
-  	color: gray;
+    color: gray;
   }
   ```
 
@@ -203,11 +223,13 @@
 
   ```css
   .Logo__name__SVK0g {
-  	color: gray;
+    color: gray;
   }
   ```
 
 
+
+<br>
 
 ### 2-4. stylelint
 
@@ -218,6 +240,8 @@
 
 
 
+<br>
+
 ### 2-5. LostGrid
 
 >``calc()`` 를 사용하는 분수기반 그리드 시스템 제공  
@@ -227,7 +251,7 @@
 
   ```css
   div {
-  	lost-column: 1/3;
+    lost-column: 1/3;
   }
   ```
 
@@ -235,22 +259,22 @@
 
   ```css
   div {
-  	width: calc(99.9% * 1/3 - (30px - 30px * 1/3));
+    width: calc(99.9% * 1/3 - (30px - 30px * 1/3));
   }
   div:nth-child(1n) {
-  	float: left;
-  	margin-right: 30px;
-  	clear: none;
+    float: left;
+    margin-right: 30px;
+    clear: none;
   }
   div:last-child {
-  	margin-right: 0;
+    margin-right: 0;
   }
   div:nth-child(3n) {
-  	margin-right: 0;
-  	float: right;
+    margin-right: 0;
+    float: right;
   }
   div:nth-child(3n + 1) {
-  	clear: both;
+    clear: both;
   }
   ```
 
@@ -282,6 +306,8 @@
 
 
 
+<br>
+
 #### 3-1-b. Stylefmt
 
 > css나 scss파일의 컨벤션을 강제하며, 규칙에 맞게 자동으로 코드를 변경해 준다.  
@@ -289,6 +315,8 @@
 > 설정 파일은 stylelint 작성법에 따른다.
 
 
+
+<br>
 
 #### ◎ 참고
 
@@ -298,6 +326,8 @@
 | Prettier                 | JavaScript 코드 자동 정리    |
 
 
+
+<br>
 
 #### ◎ Lint , JSLint , JSHint , ESLint
 
@@ -355,6 +385,8 @@
 
 
 
+<br>
+
 ### 5-1. Flex Box
 
 * https://css-tricks.com/snippets/css/a-guide-to-flexbox/
@@ -367,6 +399,8 @@
   > 개구리를 연꽃 잎 위에 올리면 성공
 
 
+
+<br>
 
 ### 5-2. Grid Layout
 
@@ -409,6 +443,8 @@
 
 
 
+<br>
+
 ### 6-1. OOCSS (Object Oriented CSS)
 
 ```
@@ -416,6 +452,8 @@ CSS 모듈 방식으로 코딩하여 중복을 최소화 하는 기법
 ```
 
 
+
+<br>
 
 ###6-2. BEM (Block Element Modifier)
 
@@ -430,6 +468,8 @@ CSS 모듈 방식으로 코딩하여 중복을 최소화 하는 기법
 * **Modifier** : block 또는 element의 속성. 이 속성은 block 또는 element의 **외관이나 상태를 변화시킨다.**
 
 
+
+<br>
 
 ### 6-3. SMACSS (Scalable *and* Modular Architecture *for* CSS)
 
@@ -459,4 +499,8 @@ CSS 모듈 방식으로 코딩하여 중복을 최소화 하는 기법
 
 
 [ Part 1 끝 ]
+
+
+
+<br>
 
