@@ -483,7 +483,7 @@
 * SMACSS의 5가지 규칙
     * **Base** : 기본규칙 ( `Reset` , `Default` , `Variables` , `Mixins` , etc ) 을 정의
     * **Layout** : 페이지를 섹션으로 나누는 것으로 하나 이상의 모듈을 포함한다.
-    * **Module** : 재사용 또는 조함 가능한 단위
+    * **Module** : 재사용 또는 조합 가능한 단위
     * **State** : 레이아웃과 모듈이 어떻게 표현되는지를 나타냄
     * **Theme** : State 보다 큰 개념
 
