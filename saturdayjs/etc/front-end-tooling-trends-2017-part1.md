@@ -55,7 +55,8 @@
 
 ## 1. Pre-processor
 
-* CSS를 확장하는 스크립팅 언어
+> CSS를 확장하는 스크립팅 언어
+
 * 컴파일러를 통하여 브라우저에서 사용할 수 있는 일반 CSS 문법 형태로 변환한다.
 * 브라우저는 Pre-processor의 문법을 인식하지 못하므로 실제 사용을 위해선 CSS로의 변환과정이 필요하다.
 * ``변수`` , ``중첩`` , ``믹스인`` , ``선택자상속`` 등의 기능을 제공한다.
@@ -69,7 +70,8 @@
 
 ### 1-1. Sass (Syntactically Awesome Styles Sheets)
 
-    변수, 중첩(Nesting)표현, 믹스인(Mixins), 함수, 익스텐션(Extension), 연산, 보간법(Interpolation) 등 다양한 기능 제공
+> 변수, 중첩(Nesting)표현, 믹스인(Mixins), 함수, 익스텐션(Extension), 연산, 보간법(Interpolation) 등 다양한 기능 제공
+
 
 * Sass 참고 내용
 
@@ -87,8 +89,8 @@
 
 #### 1-1-a. 오리지널 Ruby-Sass 사용
 
-* Ruby 환경에서 Sass를 설치 / 컴파일 한다.  
-* [참고] Mac OS에는 Ruby가 기본 설치되어 있으며, Windows 에서는 별도 설치해야 함.
+> Ruby 환경에서 Sass를 설치 / 컴파일 한다.  
+> [참고] Mac OS에는 Ruby가 기본 설치되어 있으며, Windows 에서는 별도 설치해야 함.
 
 
 
@@ -113,11 +115,11 @@
 
 #### 1-1-c. LibSass 사용
 
-    Sass는 원래 Ruby로 작성되었으나 C 언어로 작성된 LibSass 를 사용하면,
-    더 이상 Ruby에 종속되지 않고 많은 Wrapper를 사용할 수 있으며,
-    거의 모든 언어와 Sass를 쉽게 통합할 수 있다.
-    
-    또한, Ruby-Sass 대비 최대 4000% 빠른 컴파일 성능을 갖는다.
+> Sass는 원래 Ruby로 작성되었으나 C 언어로 작성된 LibSass 를 사용하면,  
+> 더 이상 Ruby에 종속되지 않고 많은 Wrapper를 사용할 수 있으며,  
+> 거의 모든 언어와 Sass를 쉽게 통합할 수 있다.  
+>
+> 또한, Ruby-Sass 대비 최대 4000% 빠른 컴파일 성능을 갖는다.
 
 * Wrappers
   * ``SassC`` , ``Go`` , ``Java`` , ``JavaScript`` , ``Lua`` , ``.NET`` , ``Node`` , ``Perl`` , ``PHP`` , ``Python`` , ``Ruby`` , ``Scala``
@@ -129,8 +131,10 @@
 
 ### 1-2. Less
 
-* Bootstrap framework 사용자 증가로 인기가 높아짐
-* (참고) 최근 Bootstrap 4 에서는 Sass를 사용하고 있음
+> Bootstrap framework 사용자 증가로 인기가 높아짐  
+> (참고) 최근 Bootstrap 4 에서는 Sass를 사용하고 있음
+
+
 
 
 
@@ -447,9 +451,7 @@
 
 ### 6-1. OOCSS (Object Oriented CSS)
 
-```
-CSS 모듈 방식으로 코딩하여 중복을 최소화 하는 기법
-```
+> CSS 모듈 방식으로 코딩하여 중복을 최소화 하는 기법
 
 
 
@@ -457,13 +459,10 @@ CSS 모듈 방식으로 코딩하여 중복을 최소화 하는 기법
 
 ###6-2. BEM (Block Element Modifier)
 
-```
-현재 프론트엔드개발 분야에서 가장 많이 사용되고 있는 CSS 방법론
-```
+> 현재 프론트엔드개발 분야에서 가장 많이 사용되고 있는 CSS 방법론
 
 * **Block** : 문단 전체에 적용된 element  또는 element를 담고 있는 **컨테이너**를 말한다.
-
-  > ex) `logo` , `login form` , `menu` , `search form` , `content` , `footer`
+  * ex) `logo` , `login form` , `menu` , `search form` , `content` , `footer`
 * **Elemnent** : block 안에서 특정 기능을 수행하는 **컴포넌트**. element는 **상황에 따라 달라진다.**
 * **Modifier** : block 또는 element의 속성. 이 속성은 block 또는 element의 **외관이나 상태를 변화시킨다.**
 
@@ -473,14 +472,13 @@ CSS 모듈 방식으로 코딩하여 중복을 최소화 하는 기법
 
 ### 6-3. SMACSS (Scalable *and* Modular Architecture *for* CSS)
 
-    Jonathan Snook에 의해 만들어진 CSS 방법론  
-    CSS에 대한 확장형 모듈식 구조  
-    CSS의 프레임워크가 아닌 하나의 스타일 가이드
+> Jonathan Snook에 의해 만들어진 CSS 방법론  
+> CSS에 대한 확장형 모듈식 구조  
+> CSS의 프레임워크가 아닌 하나의 스타일 가이드
 
 * SMACSS의 핵심은 `범주화 (Categorization)`이다.
-
-  > CSS 규칙을 범주화 함으로써 패턴을 체계적으로 정리하게 되면,  
-  > 코드량이 감소하고,  유지보수가 용이해지며, 스타일에 일관성을 줄 수 있다.
+  * CSS 규칙을 범주화 함으로써 패턴을 체계적으로 정리하게 되면,  
+    코드량이 감소하고,  유지보수가 용이해지며, 스타일에 일관성을 줄 수 있다.
 
 
 * SMACSS의 5가지 규칙
