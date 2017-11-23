@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta http-equiv="X-UA-Compatible" content="ie=edge">
+<title>Document</title>
+<style>
+body {margin:0;}
+* {box-sizing:border-box;}
+.wrap {min-height:100vh; padding:30px; background:#ccc;}
+.coupon_unit {overflow:hidden;} /* padding:10px; */
+.coupon_unit + .coupon_unit {margin-top:20px;}
+.coupon_top {padding:10px;}
+.coupon_btm {padding:10px;}
+.item_box {padding:10px; border:1px solid red;}
+.coupon_top .item_box {height:150px;}
+.coupon_btm .item_box {height:50px;}
+
+.coupon_hr {position:relative; height:20px; background-image:linear-gradient(90deg, #333 0, #333 70%, transparent 70%, transparent 100%); background-size:5px 1px; background-position:0 50%; background-repeat:repeat-x; z-index:0;}
+.coupon_hr:before,
+.coupon_hr:after {content:''; box-sizing:border-box; position:absolute; top:50%; height:20px; width:20px; margin-top:-10px; border-radius:50%; z-index:1;}
+.coupon_hr:before {left:-10px;}
+.coupon_hr:after {right:-10px;}
+
+.coupon_unit,
+.coupon_hr:before,
+.coupon_hr:after {background-color:#ccc;}
+.coupon_top,
+.coupon_btm,
+.coupon_hr {background-color:greenyellow;}
+
+.border .coupon_top,
+.border .coupon_btm,
+.border .coupon_hr:before,
+.border .coupon_hr:after {border:1px solid #000;}
+
+.border .coupon_top {border-bottom:none;}
+.border .coupon_btm {border-top:none;}
+/*
+.border .coupon_hr {border:1px solid #000;}
+.border .coupon_hr {border-top:none; border-bottom:none;}
+*/
+
+</style>
+</head>
+<body>
+
+
+<div class="wrap">
+	<p>1) 가상요소(before / after) + linear-gradient 배경을 사용한 유닛</p>
+	<div class="coupon_unit">
+		<div class="coupon_top">
+			<div class="item_box">
+				유닛상단
+			</div>
+		</div>
+		<div class="coupon_hr" aria-hidden="true"></div>
+		<div class="coupon_btm">
+			<div class="item_box">
+				유닛하단
+			</div>
+		</div>
+	</div>
+
+	<p>2) 1) + border</p>
+	<div class="coupon_unit border">
+		<div class="coupon_top">
+			<div class="item_box">
+				유닛상단
+			</div>
+		</div>
+		<div class="coupon_hr" aria-hidden="true"></div>
+		<div class="coupon_btm">
+			<div class="item_box">
+				유닛하단
+			</div>
+		</div>
+	</div>
+
+	<p>3) 2개의 SVG + linear-gradient 배경을 사용한 유닛</p>
+	<div class="coupon_unit svg">
+		<div class="coupon_top">
+			<div class="item_box">
+				유닛상단
+			</div>
+		</div>
+		<div class="coupon_hr_svg" aria-hidden="true">
+			<svg class="svg_hr_shape left" xmlns="http://www.w3.org/2000/svg" version="1.1" viewBox="0 0 51 100">
+				<path d="M0 100h51V0H0c27.614 0 50 22.386 50 50s-22.386 50-50 50z"/>
+			</svg>
+
+			<svg class="svg_hr_shape right" xmlns="http://www.w3.org/2000/svg" version="1.1" viewBox="0 0 51 100">
+				<path d="M51 100H0V0h51C23.386 0 1 22.386 1 50s22.386 50 50 50z"/>
+			</svg>
+		</div>
+		<div class="coupon_btm">
+			<div class="item_box">
+				유닛하단
+			</div>
+		</div>
+	</div>
+
+	<p>4) 3) 의 SVG 에 shadow 적용</p>
+	<div class="coupon_unit svg">
+		<div class="coupon_top">
+			<div class="item_box">
+				유닛상단
+			</div>
+		</div>
+		<div class="coupon_hr_svg" aria-hidden="true">
+			<svg class="svg_hr_shape left" xmlns="http://www.w3.org/2000/svg" version="1.1" viewBox="0 0 51 100">
+				<filter id="dropShadow01">
+					<feGaussianBlur in="SourceAlpha" stdDeviation="5" />
+					<feOffset dx="-5" dy="5" />
+					<feMerge>
+						<feMergeNode />
+						<feMergeNode in="SourceGraphic" />
+					</feMerge>
+				</filter>
+				<path filter="url(#dropShadow01)" d="M0 100h51V0H0c27.614 0 50 22.386 50 50s-22.386 50-50 50z"/>
+			</svg>
+
+			<svg class="svg_hr_shape right" xmlns="http://www.w3.org/2000/svg" version="1.1" viewBox="0 0 51 100">
+				<filter id="dropShadow02">
+					<feGaussianBlur in="SourceAlpha" stdDeviation="5" />
+					<feOffset dx="5" dy="5" />
+					<feMerge>
+						<feMergeNode />
+						<feMergeNode in="SourceGraphic" />
+					</feMerge>
+				</filter>
+				<path filter="url(#dropShadow02)" d="M51 100H0V0h51C23.386 0 1 22.386 1 50s22.386 50 50 50z"/>
+			</svg>
+		</div>
+		<div class="coupon_btm">
+			<div class="item_box">
+				유닛하단
+			</div>
+		</div>
+	</div>
+</div>
+
+
+<style>
+.svg .coupon_top,
+.svg .coupon_btm,
+.svg .coupon_hr_svg {background-color:rgb(160, 192, 221);}
+.svg_hr_shape {fill:rgb(160, 192, 221);}
+
+.coupon_hr_svg {position:relative; height:20px; margin-left:10px; margin-right:10px; background-image:linear-gradient(90deg, #333 0, #333 70%, transparent 70%, transparent 100%); background-size:5px 1px; background-position:0 50%; background-repeat:repeat-x; z-index:0;}
+.coupon_hr_svg .svg_hr_shape {box-sizing:border-box; position:absolute; top:50%; height:20px; width:auto; margin-top:-10px; z-index:-1;}
+.svg_hr_shape.left {left:-10px;}
+.svg_hr_shape.right {right:-10px;}
+#dropShadow01 {fill:red;}
+
+</style>
+
+</body>
+</html>
