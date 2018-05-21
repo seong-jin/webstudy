@@ -76,13 +76,62 @@
   * 기타
 *  언어장애
 
-<table>
+<table style="width:100%">
 <tbody>
 <tr>
 <th scope="col" colspan="2">장애 유형</th>
 <th scope="col">특징</th>
 <th scope="col">보완대책</th>
 </tr>
+<tr>
+<th scope="row" rowspan="3">시각장애</th>
+<th scope="row">전맹</th>
+<td>모니터를 볼 수 없음, 마우스 사용 어려움</td>
+<td>스크린리더, 키보드</td>
+</tr>
+<tr>
+<th scope="row">약시</th>
+<td>모니터 사용이 일부 가능함</td>
+<td>화면확대/고대비</td>
+</tr>
+<tr>
+<th scope="row">색맹</th>
+<td>색을 구별할 수 없음</td>
+<td>색의 제한적 사용</td>
+</tr>
+<tr>
+<th scope="row" colspan="2">청각장애</th>
+<td>사운드, 오디오 등을 청취할 수 없음</td>
+<td>수화, 시각정보 제공</td>
+</tr>
+<tr>
+<th scope="row" rowspan="2">지체장애</th>
+<th scope="row">상지장애</th>
+<td>손을 사용할 수 없음</td>
+<td>마우스 대체 방법, 키보드만 사용</td>
+</tr>
+<tr>
+<th scope="row">기타</th>
+<td>움직임이 어려움</td>
+<td>충분한 시간 제공</td>
+</tr>
+<tr>
+<th scope="row" colspan="2">언어장애</th>
+<td>복잡한 용어, 어려운 용어의 이해 불가능</td>
+<td>쉬운 용어 사용</td>
+</tr>
+</tbody>
+</table>
+
+<table style="width:100%">
+<thead>
+<tr>
+<th scope="col" colspan="2">장애 유형</th>
+<th scope="col">특징</th>
+<th scope="col">보완대책</th>
+</tr>
+</thead>
+<tbody>
 <tr>
 <th scope="row" rowspan="3">시각장애</th>
 <th scope="row">전맹</th>
