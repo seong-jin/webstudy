@@ -74,10 +74,11 @@
 * 지체장애
   * 상지장애
   * 기타
-*  언어장애
+* 언어장애
 
+
+#### ◎ 장애유형 별 특징 및 보완대책
 <table>
-<caption>장애유형 별 특징 및 보완대책</caption>
 <thead>
 <tr>
 <th scope="col" colspan="2">장애 유형</th>
@@ -126,38 +127,15 @@
 </tbody>
 </table>
 
-<table>
-<caption>OS(Windows)에서 제공해 주는 접근성 기능 및 키보드 실행 방법</caption>
-<thead>
-<tr>
-<th scope="col">기능</th>
-<th scope="col">키보드 실행방법</th>
-<th scope="col">설명</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<th scope="row">고정키</th>
-<td>`Shift` 키를 5번 눌러 고정키 기능을 실행/해제</td>
-<td>`Ctrl` + `Alt` + `Del` 키과 같이 여러 개의 키를 한 번에 하나씩 순차적으로 눌러도 동작하도록 하는 기능</td>
-</tr>
-<tr>
-<th scope="row">필터키</th>
-<td>`Right-Shift` 키를 8초간 눌러 필터키 기능을 실행/해제</td>
-<td>필터키는 키보드의 반복 속도를 늦추는 기능</td>
-</tr>
-<tr>
-<th scope="row">토글키</th>
-<td>`Num Lock` 키를 5초간 눌러 토글키 기능을 실행/해제</td>
-<td>토글키는 `Caps Lock` , `Num Lock` 또는 `Scroll Lock` 키를 누를 때마다 비프 음이 들리도록 설정하는 기능</td>
-</tr>
-<tr>
-<th scope="row">고대비 모드</th>
-<td>`Left-Alt` + `Left-Shift` + `PrintScreen` 키를 동시에 눌러 고대비 모드를 실행/해제</td>
-<td>가독성을 높이기 위해 명도 대비가 큰 시스템 기본 색과 폰트로 설정할 수 있는 기능</td>
-</tr>
-</tbody>
-</table>
+#### ◎ OS(Windows)에서 제공해 주는 접근성 기능 및 키보드 실행 방법
+
+| 기능    | 키보드 실행방법                                 | 설명                                       |
+| ----- | ---------------------------------------- | ---------------------------------------- |
+| 고정키   | `Shift` 키를 5번 눌러 고정키 기능을 실행/해제           | `Ctrl` + `Alt` + `Del` 키과 같이 여러 개의 키를 한 번에 하나씩 순차적으로 눌러도 동작하도록 하는 기능 |
+| 필터    | `Right-Shift` 키를 8초간 눌러 필터키 기능을 실행/해제    | 필터키는 키보드의 반복 속도를 늦추는 기능                  |
+| 토글키   | `Num Lock` 키를 5초간 눌러 토글키 기능을 실행/해제       | `Caps Lock` , `Num Lock` 또는 `Scroll Lock` 키를 누를 때마다 비프 음이 들리도록 설정하는 기능 |
+| 고대비모드 | `Left-Alt` + `Left-Shift` + `PrintScreen` 키를 동시에 눌러 고대비 모드를 실행/해제 | 가독성을 높이기 위해 명도 대비가 큰 시스템 기본 색과 폰트로 설정할 수 있는 기능 |
+
 
 <br>
 
