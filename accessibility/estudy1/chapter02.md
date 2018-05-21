@@ -76,54 +76,8 @@
   * 기타
 *  언어장애
 
-<table style="width:100%">
-<tbody>
-<tr>
-<th scope="col" colspan="2">장애 유형</th>
-<th scope="col">특징</th>
-<th scope="col">보완대책</th>
-</tr>
-<tr>
-<th scope="row" rowspan="3">시각장애</th>
-<th scope="row">전맹</th>
-<td>모니터를 볼 수 없음, 마우스 사용 어려움</td>
-<td>스크린리더, 키보드</td>
-</tr>
-<tr>
-<th scope="row">약시</th>
-<td>모니터 사용이 일부 가능함</td>
-<td>화면확대/고대비</td>
-</tr>
-<tr>
-<th scope="row">색맹</th>
-<td>색을 구별할 수 없음</td>
-<td>색의 제한적 사용</td>
-</tr>
-<tr>
-<th scope="row" colspan="2">청각장애</th>
-<td>사운드, 오디오 등을 청취할 수 없음</td>
-<td>수화, 시각정보 제공</td>
-</tr>
-<tr>
-<th scope="row" rowspan="2">지체장애</th>
-<th scope="row">상지장애</th>
-<td>손을 사용할 수 없음</td>
-<td>마우스 대체 방법, 키보드만 사용</td>
-</tr>
-<tr>
-<th scope="row">기타</th>
-<td>움직임이 어려움</td>
-<td>충분한 시간 제공</td>
-</tr>
-<tr>
-<th scope="row" colspan="2">언어장애</th>
-<td>복잡한 용어, 어려운 용어의 이해 불가능</td>
-<td>쉬운 용어 사용</td>
-</tr>
-</tbody>
-</table>
-
-<table style="width:100%">
+<table>
+<caption>장애유형 별 특징 및 보완대책</caption>
 <thead>
 <tr>
 <th scope="col" colspan="2">장애 유형</th>
@@ -172,6 +126,38 @@
 </tbody>
 </table>
 
+<table>
+<caption>OS(Windows)에서 제공해 주는 접근성 기능 및 키보드 실행 방법</caption>
+<thead>
+<tr>
+<th scope="col">기능</th>
+<th scope="col">키보드 실행방법</th>
+<th scope="col">설명</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<th scope="row">고정키</th>
+<td>`Shift` 키를 5번 눌러 고정키 기능을 실행/해제</td>
+<td>`Ctrl` + `Alt` + `Del` 키과 같이 여러 개의 키를 한 번에 하나씩 순차적으로 눌러도 동작하도록 하는 기능</td>
+</tr>
+<tr>
+<th scope="row">필터키</th>
+<td>`Right-Shift` 키를 8초간 눌러 필터키 기능을 실행/해제</td>
+<td>필터키는 키보드의 반복 속도를 늦추는 기능</td>
+</tr>
+<tr>
+<th scope="row">토글키</th>
+<td>`Num Lock` 키를 5초간 눌러 토글키 기능을 실행/해제</td>
+<td>토글키는 `Caps Lock` , `Num Lock` 또는 `Scroll Lock` 키를 누를 때마다 비프 음이 들리도록 설정하는 기능</td>
+</tr>
+<tr>
+<th scope="row">고대비 모드</th>
+<td>`Left-Alt` + `Left-Shift` + `PrintScreen` 키를 동시에 눌러 고대비 모드를 실행/해제</td>
+<td>가독성을 높이기 위해 명도 대비가 큰 시스템 기본 색과 폰트로 설정할 수 있는 기능</td>
+</tr>
+</tbody>
+</table>
 
 <br>
 
