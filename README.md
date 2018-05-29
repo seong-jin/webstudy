@@ -6,7 +6,7 @@
 
 
 1. Personal
-   * [Web accessibility](./accessibility/README.md)
+   * [a11y (Web accessibility)](./a11y/README.md)
 2. Team
    * [saturdayjs](./saturdayjs/README.md)
 
