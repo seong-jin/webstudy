@@ -98,25 +98,25 @@
 
 #### ◎ 다음 중 (마크업 오류방지) 검사항목에서의 오류 유형이 아닌 것은 ? ( 2 )
 
-1.  ```html
-   <div class="box1"><span><a href="#">예시1</a></span></a></div> 
-   <!-- // 오류 : </a> 태그 중복 -->
+1. 오류 : `</a>` 태그 중복
+   ```html
+   <div class="box1"><span><a href="#">예시1</a></span></a></div>
    ```
 
-2.  ```html
+2. 정답
+   ```html
    <div class="box1"><span><a href="#">예시2</a></span></div>
    ```
 
-3. ```html
+3. 오류 : `</span>` 태그 없음
+   ```html
    <div class="box1"><span id="test1"><a href="#">예시3</a><span></div>
-   <!-- // 오류 : </span> 태그 없음 -->
    ```
 
-4. ```html
+4. 오류 : `id` 중복사용, `</span>` 태그 없음 
+   ```html
    <div class="box1" id="test2"><span id="test2"><a href="#">예시1</a><span></div>
-   <!-- // 오류 : id 중복사용, </span> 태그 없음 -->
    ```
-
 
 
 #### ◎ 플래시 오브젝트를 HTML 문서에 `<object>` 태그를 이용하여 제공할 때 다음 중 키보드 내비게이션이 올바르게 이루어지는 것은 ? ( 1 )
