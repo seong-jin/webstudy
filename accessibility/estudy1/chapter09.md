@@ -103,7 +103,7 @@
    <div class="box1"><span><a href="#">예시1</a></span></a></div>
    ```
 
-2. 정답
+2. **정답**
    ```html
    <div class="box1"><span><a href="#">예시2</a></span></div>
    ```
